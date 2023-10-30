@@ -42,7 +42,7 @@ final class ExpensesTest extends TestCase
 
 
         $expenseCalculator =  new ExpenseCalculator($expenses);
-        $expenseCalculator->filter(10,2023);
+        $expenseCalculator->filter(Clock::Month(),Clock::Year());
         $this->assertEquals(6, count($expenses));  
         $this->assertEquals($expenseCalculator->summary(), 30);  
 
