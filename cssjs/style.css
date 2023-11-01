@@ -8,6 +8,15 @@
 
 /*gerais*/
 
+a{
+    text-decoration: none;
+     color: #000;
+}
+
+a:active,a:visited{
+    color: #000;
+}
+
 .entry_highlights {
     color: #2ddb0e;
 }
@@ -95,12 +104,23 @@ body {
 
 #dps__container .header_month_currenc {
     position: absolute;
-    color: #fff;
+    color: #fff !important;
     font-size: 2rem;
     right: 0;
     top: 35%;
     padding: 1rem;
 
+}
+
+
+#dps__container .header_month_currenc a {
+    color: #f2f2f2;
+    text-decoration: none;
+
+}
+#dps__container .header_month_currenc a:active ,
+#dps__container .header_month_currenc a:visited {
+    color: #f2f2f2;
 }
 
 #dps__container .main .main__painel {
